@@ -89,3 +89,73 @@ Collection<Integer> c
 ```
 
 depending on what you want to store.
+
+# 3. just give me most frequently used methods for each collection
+
+### List — `ArrayList`, `LinkedList`
+
+```java
+list.add("A");          // add element
+list.get(0);            // get by index
+list.set(0, "B");       // replace by index
+list.remove(0);         // remove by index
+list.remove("A");       // remove by value
+list.contains("A");     // check existence
+list.size();            // number of elements
+list.isEmpty();         // check empty
+list.clear();           // remove all
+list.indexOf("A");      // find index
+```
+
+### Set — `HashSet`, `LinkedHashSet`, `TreeSet`
+
+```java
+set.add("A");           // add unique element
+set.remove("A");        // remove element
+set.contains("A");      // check existence
+set.size();             // number of elements
+set.isEmpty();          // check empty
+set.clear();            // remove all
+```
+
+A `Set` does not support `get(index)` because it is not index-based.
+
+### Map — `HashMap`, `LinkedHashMap`, `TreeMap`
+
+```java
+map.put(1, "Aman");             // add/update key-value pair
+map.get(1);                     // get value using key
+map.remove(1);                  // remove using key
+map.containsKey(1);             // check key
+map.containsValue("Aman");      // check value
+map.size();                     // number of pairs
+map.isEmpty();                  // check empty
+map.clear();                    // remove all
+map.keySet();                   // get all keys
+map.values();                   // get all values
+map.entrySet();                 // get all key-value pairs
+```
+
+### Queue — `PriorityQueue`, `ArrayDeque`
+
+```java
+queue.offer(10);        // add element
+queue.poll();           // remove and return front element
+queue.peek();           // view front element, do not remove
+queue.isEmpty();        // check empty
+queue.size();           // number of elements
+queue.clear();          // remove all
+```
+
+For a `Deque` such as `ArrayDeque`, you can also use both ends:
+
+```java
+deque.addFirst(10);
+deque.addLast(20);
+deque.removeFirst();
+deque.removeLast();
+deque.peekFirst();
+deque.peekLast();
+```
+
+Note: `Map` belongs to the Java Collections Framework, but it does not extend the `Collection` interface.

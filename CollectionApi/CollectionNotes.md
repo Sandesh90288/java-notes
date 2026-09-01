@@ -305,17 +305,17 @@ Let's look at the important hierarchy.
                             │
               ┌─────────────┼─────────────┐
               │             │             │
-             List           Set          Queue
-              │             │             │
-       ┌──────┼──────┐   ┌──┼──────┐      │
-       │      │      │   │  │      │      │
+             List           Set         Queue 
+              │             │             
+       ┌──────┼──────┐   ┌──┼──────┐---------------      
+       │      │      │   │  │      │      │       |
  ArrayList LinkedList Vector HashSet TreeSet LinkedHashSet
                                            
-                                          PriorityQueue
-                                               │
-                                              Deque
-                                               │
-                                          ArrayDeque
+Queue
+├── PriorityQueue
+└── Deque
+    ├── ArrayDeque
+    └── LinkedList
 ```
 
 And:

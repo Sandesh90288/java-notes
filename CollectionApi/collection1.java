@@ -12,6 +12,9 @@ public class collection1 {
     nums.add(10);
     nums.add(20);
     nums.add(30);   
-    System.out.println("Collection: " + nums);
+    System.out.println("Collection: " + nums); 
+    for(Integer num: nums){
+        System.out.println(num);
+    }
   }
 }
